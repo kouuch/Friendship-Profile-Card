@@ -21,6 +21,10 @@ body {
     border-radius: 8px;
     position: relative;
     cursor: pointer;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 .card .image-box{
     width: 100%;
@@ -31,7 +35,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 90%;
+    object-position: 50% 50%;
     border-radius: inherit;
     transition: 0.5s ease-in-out;
 }
@@ -51,7 +55,7 @@ body {
 }
 .card:hover::after {
     opacity: 1;
-    inset: 20px;
+    inset: 10px;
 }
 
 .content {
